@@ -1,0 +1,30 @@
+/* String functions
+ *
+ * (c) Copyright 2005, ITB CompuPhase
+ * This file is provided as is (no warranties).
+ */
+#if defined _string_included
+  #endinput
+#endif
+#define _string_included
+#pragma library String
+
+native strlen(const string[]);
+native strpack(const dest[], const source[], maxlength=sizeof dest);
+native strunpack(const dest[], const source[], maxlength=sizeof dest);
+native strcat(const dest[], const source[], maxlength=sizeof dest);
+
+native strmid(const dest[], const source[], start, end, maxlength=sizeof dest);
+native bool: strins(const string[], const substr[], pos, maxlength=sizeof string);
+native bool: strdel(const string[], start, end);
+
+native strcmp(const string1[], const string2[], bool:ignorecase=false, length=cellmax);
+native strfind(const string[], const sub[], bool:ignorecase=false, pos=0);
+
+native strval(const string[]);
+native valstr(const dest[], value, bool:pack=false);
+native bool: ispacked(const string[]);
+
+native uudecode(const dest[], const source[], maxlength=sizeof dest);
+native uuencode(const dest[], const source[], numbytes, maxlength=sizeof dest);
+native memcpy(const dest[], const source[], index=0, numbytes, maxlength=sizeof dest);

@@ -1,0 +1,11 @@
+#Compiled Files
+maps.amx
+main.amx
+
+#Logs files
+server_log.txt
+*.log
+logs/
+
+#Executable Files
+*.exe
