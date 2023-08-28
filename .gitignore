@@ -8,4 +8,6 @@ server_log.txt
 logs/
 
 #Executable Files
-*.exe
+samp-server.exe
+samp-npc.exe
+announce.exe
