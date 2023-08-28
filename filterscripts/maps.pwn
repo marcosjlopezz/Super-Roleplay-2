@@ -5,7 +5,7 @@ public OnFilterScriptInit()
 {
 	new
 		Unused_Object,
-		tmpobjid,
+		tmpobjid
 	;
 
 	//CASA INT 0

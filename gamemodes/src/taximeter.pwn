@@ -125,7 +125,7 @@ public UpdateVehicleTaximeter(taxi, driver, passenger)
 	
 	if(!IsPlayerConnected(driver))
 	{
-		SendClientMessageEx(passenger, -1, "{"#SILVER_COLOR"}El taxi te costó %s$.", number_format_thousand(TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT]));		
+		SendClientMessagef(passenger, -1, "{"#SILVER_COLOR"}El taxi te costó %s$.", number_format_thousand(TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT]));		
 		GivePlayerCash(passenger, -TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT], true, true);
 		
 		ResetVehicleTaxiMeter(taxi);
@@ -144,7 +144,7 @@ public UpdateVehicleTaximeter(taxi, driver, passenger)
 		}
 		PLAYER_WORKS[driver][WORK_TAXI][pwork_LEVEL] ++;
 		
-		SendClientMessageEx(driver, -1, "{"#SILVER_COLOR"}Has ganado %s$ con este viaje.", number_format_thousand(TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT] + work_extra_payment));
+		SendClientMessagef(driver, -1, "{"#SILVER_COLOR"}Has ganado %s$ con este viaje.", number_format_thousand(TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT] + work_extra_payment));
 		GivePlayerCash(driver, TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT] + work_extra_payment, true, false);
 		
 		ResetVehicleTaxiMeter(taxi);
@@ -180,8 +180,8 @@ public UpdateVehicleTaximeter(taxi, driver, passenger)
 		}
 		PLAYER_WORKS[driver][WORK_TAXI][pwork_LEVEL] ++;
 		
-		SendClientMessageEx(driver, -1, "{"#SILVER_COLOR"}Has ganado %s$ con este viaje.", number_format_thousand(TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT] + work_extra_payment));
-		SendClientMessageEx(passenger, -1, "{"#SILVER_COLOR"}El taxi te costó %s$.", number_format_thousand(TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT]));
+		SendClientMessagef(driver, -1, "{"#SILVER_COLOR"}Has ganado %s$ con este viaje.", number_format_thousand(TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT] + work_extra_payment));
+		SendClientMessagef(passenger, -1, "{"#SILVER_COLOR"}El taxi te costó %s$.", number_format_thousand(TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT]));
 		
 		GivePlayerCash(driver, TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT] + work_extra_payment, true, false);
 		GivePlayerCash(passenger, -TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT], true, true);
@@ -203,8 +203,8 @@ public UpdateVehicleTaximeter(taxi, driver, passenger)
 		}
 		PLAYER_WORKS[driver][WORK_TAXI][pwork_LEVEL] ++;
 		
-		SendClientMessageEx(driver, -1, "{"#SILVER_COLOR"}Has ganado %s$ con este viaje.", number_format_thousand(TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT] + work_extra_payment));
-		SendClientMessageEx(passenger, -1, "{"#SILVER_COLOR"}El taxi te costó %s$.", number_format_thousand(TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT]));
+		SendClientMessagef(driver, -1, "{"#SILVER_COLOR"}Has ganado %s$ con este viaje.", number_format_thousand(TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT] + work_extra_payment));
+		SendClientMessagef(passenger, -1, "{"#SILVER_COLOR"}El taxi te costó %s$.", number_format_thousand(TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT]));
 		
 		GivePlayerCash(driver, TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT] + work_extra_payment, true, false);
 		GivePlayerCash(passenger, -TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT], true, true);
@@ -243,8 +243,8 @@ public UpdateVehicleTaximeter(taxi, driver, passenger)
 		}
 		PLAYER_WORKS[driver][WORK_TAXI][pwork_LEVEL] ++;
 		
-		SendClientMessageEx(driver, -1, "{"#SILVER_COLOR"}Has ganado %s$ con este viaje.", number_format_thousand(TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT] + work_extra_payment));
-		SendClientMessageEx(passenger, -1, "{"#SILVER_COLOR"}El taxi te costó %s$.", number_format_thousand(TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT]));
+		SendClientMessagef(driver, -1, "{"#SILVER_COLOR"}Has ganado %s$ con este viaje.", number_format_thousand(TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT] + work_extra_payment));
+		SendClientMessagef(passenger, -1, "{"#SILVER_COLOR"}El taxi te costó %s$.", number_format_thousand(TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT]));
 		
 		GivePlayerCash(driver, TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT] + work_extra_payment, true, false);
 		GivePlayerCash(passenger, -TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT], true, true);
@@ -266,8 +266,8 @@ public UpdateVehicleTaximeter(taxi, driver, passenger)
 		}
 		PLAYER_WORKS[driver][WORK_TAXI][pwork_LEVEL] ++;
 		
-		SendClientMessageEx(driver, -1, "{"#SILVER_COLOR"}Has ganado %s$ con este viaje.", number_format_thousand(TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT] + work_extra_payment));
-		SendClientMessageEx(passenger, -1, "{"#SILVER_COLOR"}El taxi te costó %s$.", number_format_thousand(TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT]));
+		SendClientMessagef(driver, -1, "{"#SILVER_COLOR"}Has ganado %s$ con este viaje.", number_format_thousand(TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT] + work_extra_payment));
+		SendClientMessagef(passenger, -1, "{"#SILVER_COLOR"}El taxi te costó %s$.", number_format_thousand(TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT]));
 		
 		GivePlayerCash(driver, TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT] + work_extra_payment, true, false);
 		GivePlayerCash(passenger, -TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT], true, true);
@@ -306,11 +306,11 @@ public UpdateVehicleTaximeter(taxi, driver, passenger)
 		}
 		PLAYER_WORKS[driver][WORK_TAXI][pwork_LEVEL] ++;
 		
-		SendClientMessageEx(driver, -1, "{"#SILVER_COLOR"}Has ganado %s$ con este viaje.", number_format_thousand(TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT] + work_extra_payment));
+		SendClientMessagef(driver, -1, "{"#SILVER_COLOR"}Has ganado %s$ con este viaje.", number_format_thousand(TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT] + work_extra_payment));
 		SendClientMessage(driver, -1, "{"#SILVER_COLOR"}El pasajero no tiene suficiente dinero para seguir pagando el viaje.");
 		GivePlayerCash(driver, TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT] + work_extra_payment, true, false);
 		
-		SendClientMessageEx(passenger, -1, "{"#SILVER_COLOR"}El taxi te costó %s$.", number_format_thousand(TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT]));
+		SendClientMessagef(passenger, -1, "{"#SILVER_COLOR"}El taxi te costó %s$.", number_format_thousand(TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT]));
 		SendClientMessage(passenger, -1, "{"#SILVER_COLOR"}No tienes suficiente dinero para seguir pagando el viaje.");
 		GivePlayerCash(passenger, -TAXI_METER_VEHICLE[taxi][veh_taxi_meter_PAYMENT], true, true);
 		if(PI[passenger][pi_CASH] < 0) SetPlayerCash(passenger, 0);

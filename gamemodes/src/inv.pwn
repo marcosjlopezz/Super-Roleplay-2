@@ -805,7 +805,7 @@ OnPlayerClickInventoryItem(playerid, section, index) {
         }
     }
     else {
-        SendClientMessageEx(playerid, -1, "{"#RED_COLOR"}Espacio vacío.");
+        SendClientMessagef(playerid, -1, "{"#RED_COLOR"}Espacio vacío.");
     }
 }
 
@@ -885,7 +885,7 @@ hook OnNearPlayerSelected(playerid, to_player, id) {
                         format(action, sizeof action, "le muestra su licencia de conducir a %s.", PLAYER_TEMP[to_player][pt_RP_NAME]);
                         Auto_SendPlayerAction(playerid, action);
 
-                        SendClientMessageEx(to_player, -1, "{"#SILVER_COLOR"}Licencia de conducir de %s, puntos: %d.", PLAYER_TEMP[playerid][pt_RP_NAME], PI[playerid][pi_DRIVE_LICENSE_POINTS]);
+                        SendClientMessagef(to_player, -1, "{"#SILVER_COLOR"}Licencia de conducir de %s, puntos: %d.", PLAYER_TEMP[playerid][pt_RP_NAME], PI[playerid][pi_DRIVE_LICENSE_POINTS]);
                     }
                 }
             }
