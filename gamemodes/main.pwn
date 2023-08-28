@@ -39,7 +39,7 @@
 #include <PawnPlus>
 #include <YSF>
 
-/* NOMBRES Y COLORES */
+/* NOMBRES */
 #define SERVER_VERSION			"0.0" //Version
 #define VERSION_DATE			"00/00/0000" //Fecha version
 
@@ -62,6 +62,7 @@
 #define CMD_LOGGIN 				1 // log de comandos
 #define LOGIN_TIME 				180000
 
+/* COLORES */
 #define PRIMARY_COLOR 			"fce679"
 #define PRIMARY_COLOR2 			0xfce679ff /* Este es el color primario Hex, solo agarras el de PRIMARY_COLOR y le colocas 0x atras y FF a lo ultimo. */
 
@@ -78,19 +79,21 @@
 #define PLAYER_COLOR			0xCCCCCC00
 #define SPECIAL_ACTION_PISSING 	68
 
-#define MAX_NU_VEHICLES			2 //Maximos vehiculos para no vip
-#define MAX_NU_PROPERTIES		1 //Maximas propiedades para no vip
-#define MAX_NU_WORKS			1 //Maximos trabajos para no vip
-#define MAX_NU_TOYS				3 //Maximos toys para no vip
-#define MAX_NU_VOBJECTS			3 //Maximos objetos de vehiculos para no vip
-#define MAX_NU_PROPERTY_OBJECTS 150 //Maximos objetos de propiedades para no vip
+/* MAXIMOS SIN VIP */
+#define MAX_NU_VEHICLES			2
+#define MAX_NU_PROPERTIES		1 
+#define MAX_NU_WORKS			1
+#define MAX_NU_TOYS				3
+#define MAX_NU_VOBJECTS			3
+#define MAX_NU_PROPERTY_OBJECTS 150
 
-#define MAX_SU_VEHICLES  		5 //Maximos para personas con vip
-#define MAX_SU_PROPERTIES 		5 //Maximos para personas con vip
-#define MAX_SU_WORKS			3 //Maximos para personas con vip
-#define MAX_SU_TOYS				6 //Maximos para personas con vip
-#define MAX_SU_VOBJECTS			10 //Maximos para personas con vip
-#define MAX_SU_PROPERTY_OBJECTS 250 //Maximos para personas con vip
+/* MAXIMOS VIP */
+#define MAX_SU_VEHICLES  		5
+#define MAX_SU_PROPERTIES 		5
+#define MAX_SU_WORKS			3
+#define MAX_SU_TOYS				6
+#define MAX_SU_VOBJECTS			10
+#define MAX_SU_PROPERTY_OBJECTS 250
 
 #define HidePlayerDialog(%1)	ShowPlayerDialog(%1, -1, 0, " ", " ", " ", " ")
 
