@@ -6,6 +6,8 @@
 
 	Tenia sistemas bugs los cuales ya estan eliminados.
 	Y alguno que otro cambio.
+
+	Gamemode Fixeada por: Dére
 */
 
 #pragma option -d2
@@ -51,7 +53,7 @@
 #define SERVER_GAMEMODE			"Roleplay en Español" //Texto de la gamemode en la lista del servidor
 #define SERVER_LANGUAGE			"Español - Spanish" //Lenguaje del servidor
 #define SERVER_WEBSITE			" Web/Discord del servidor " //Web del servidor
-#define SERVER_HOSTNAME 		"(ESP) "SERVER_NAME" - Rol v"SERVER_VERSION"" //Nombre en la lista de servidores
+#define SERVER_HOSTNAME 		"(ESP) "SERVER_NAME" - Rol Español" //Nombre en la lista de servidores
 
 #define SERVER_COIN				"Coins" //Nombre de la moneda del servidor
 
@@ -786,19 +788,19 @@ enum work_info_info
 }
 new work_info[][work_info_info] =
 {
-    {WORK_TYPE_NONE, 0, "ninguno",					false, 0, 0, 0,			0, 0, 0, 0},
-	{WORK_TYPE_NORMAL, 1, "taxista",				false, 0, 0, 0,			0, 0, 0, 0},
-	{WORK_TYPE_NORMAL, 1, "camionero",				false, 0, 50, 1300,		13000, 8000, 7000, 0},
-	{WORK_TYPE_NORMAL, 3, "mecánico",				true, 0, 0, 0,			10000, 4000, 2000, 0},
-	{WORK_TYPE_NORMAL, 1, "cosechador",				false, 20, 30, 800,		2000, 1000, 900, 0},
-	{WORK_TYPE_NORMAL, 4, "fumigador",				false, 20, 30, 800,		2000, 1000, 9000, 0},
+    {WORK_TYPE_NONE, 0, "ninguno",					false, 0, 0, 0,				0, 0, 0, 0},
+	{WORK_TYPE_NORMAL, 1, "taxista",				false, 0, 0, 0,				0, 0, 0, 0},
+	{WORK_TYPE_NORMAL, 1, "camionero",				false, 0, 50, 1300,			13000, 8000, 7000, 0},
+	{WORK_TYPE_NORMAL, 3, "mecánico",				true, 0, 0, 0,				10000, 4000, 2000, 0},
+	{WORK_TYPE_NORMAL, 1, "cosechador",				false, 20, 30, 800,			2000, 1000, 900, 0},
+	{WORK_TYPE_NORMAL, 4, "fumigador",				false, 20, 30, 800,			2000, 1000, 9000, 0},
 	{WORK_TYPE_NORMAL, 1, "basurero", 				true, 500, 100, 5000,		9000, 6000, 3000, 0},
-	{WORK_TYPE_NORMAL, 1, "leñador",				false, 10, 100, 100,	0, 3000, 1000, 0},
-	{WORK_TYPE_NORMAL, 5, "agricultor",				false, 0, 0, 0,			0, 0, 0, 0},
-	{WORK_TYPE_FAMILY, 10, "Policía Nacional",		true, 10000, 1, 0,		0, 0, 0, 0},
-	{WORK_TYPE_NORMAL, 1, "pizzero",				true, 60, 20, 800,		0, 0, 0, 0},
+	{WORK_TYPE_NORMAL, 1, "leñador",				false, 10, 100, 100,		0, 3000, 1000, 0},
+	{WORK_TYPE_NORMAL, 5, "agricultor",				false, 0, 0, 0,				0, 0, 0, 0},
+	{WORK_TYPE_FAMILY, 10, "Policía",				true, 5000, 1, 0,			0, 0, 0, 0},
+	{WORK_TYPE_NORMAL, 1, "pizzero",				true, 60, 20, 800,			0, 0, 0, 0},
 	{WORK_TYPE_NORMAL, 5, "médico",					true, 1000, 1000, 1000,		11000, 7000, 4000, 0},
-	{WORK_TYPE_NORMAL, 1, "almacén",				false, 10, 1000, 100,	11000, 9000, 4600, 0},
+	{WORK_TYPE_NORMAL, 1, "almacén",				false, 10, 1000, 100,		11000, 9000, 4600, 0},
 	{WORK_TYPE_NORMAL, 6, "repartidor",				false, 0, 6500, 950,		15000, 15000, 15000, 0}
 };
 
@@ -810,9 +812,7 @@ enum enum_PLAYER_WORKS
 };
 new PLAYER_WORKS[MAX_PLAYERS][sizeof(work_info)][enum_PLAYER_WORKS];
 
-new Float:MedicalBuyKitsCoords[][3] = {
-	{-2031.387207, -115.191055, 1035.171875}
-};
+new Float:MedicalBuyKitsCoords[][3] = { {-2031.387207, -115.191055, 1035.171875} };
 
 /* Tuning Object System */
 
